@@ -48,19 +48,19 @@
 							color: #f0652f;
 						  cursor: pointer;
 						}
-						#ko_toggle {
+						#bracket_toggle {
 						  display: none; /* hide the checkbox */
 						}
-						#ko_bracket {
+						#bracket {
 						  display: none;
 						}
-						#ko_toggle:checked + #ko_bracket {
+						#bracket_toggle:checked + #bracket {
 						  display: block;
 						}
 						</style>
-						<sup>2</sup><label for="ko_toggle">Knockout bracket illustration</label>  
-						<input type="checkbox" id="ko_toggle"/>  
-						<span id="ko_bracket">
+						<sup>2</sup><label for="bracket_toggle">Knockout bracket illustration</label>  
+						<input type="checkbox" id="bracket_toggle"/>  
+						<span id="bracket">
 							<img src="images/Knockout bracket 24-12-6.png">
 						</span>  
 					</p>
@@ -70,23 +70,19 @@
 					<h3>Results:</h3>
 					<p>
 						<style>
-						label {
-							color: #f0652f;
-						  cursor: pointer;
-						}
-						#results_toggle {
+						#knockouts_toggle {
 						  display: none; /* hide the checkbox */
 						}
-						#ko_results {
+						#knockout_results {
 						  display: none;
 						}
-						#results_toggle:checked + #ko_results {
+						#knockouts_toggle:checked + #knockout_results {
 						  display: block;
 						}
 						</style>
-						<label for="results_toggle">Final positions after the 24-pilot knockout</label>
-						<input type="checkbox" id="results_toggle"/>  
-						<span id="ko_results">
+						<label for="knockouts_toggle">Final positions after the 24-pilot knockout</label>
+						<input type="checkbox" id="knockouts_toggle"/>  
+						<span id="knockout_results">
 							<img src="results/2016 British Championship knockout results.png">
 						</span>
 					</p>
@@ -110,7 +106,22 @@
 						<li><a href="./results/qfA.html">qfA.html</a></li>
 					</ul>
 					<p>
-						Overall qualifying positions after 5 rounds (taking best 3).
+						<style>
+						#qualifying_toggle {
+						  display: none; /* hide the checkbox */
+						}
+						#qualifying_results {
+						  display: none;
+						}
+						#qualifying_toggle:checked + #qualifying_results {
+						  display: block;
+						}
+						</style>
+						<label for="qualifying_toggle">Overall qualifying positions after 5 rounds (taking best 3)</label>
+						<input type="checkbox" id="qualifying_toggle"/>  
+						<span id="qualifying_results">
+							<img src="results/2016 British Championship qualifying results.png">
+						</span>
 					</p>
 					<h5>Qualifying Round 5</h5>
 					<ul>
