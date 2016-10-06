@@ -43,15 +43,52 @@
 						<sup>1</sup>Round-by-round scoring awards points to each competitor based on their ranking in each round, which is calculated from the number of laps completed and the time taken.<br>
 					</p>
 					<p>
-						<sup>2</sup>Knockout bracket calculated as follows:<br>
-						<img src="images/Knockout bracket 24-12-6.png">
+						<style>
+						label {
+							color: #f0652f;
+						  cursor: pointer;
+						}
+						#ko_toggle {
+						  display: none; /* hide the checkbox */
+						}
+						#ko_bracket {
+						  display: none;
+						}
+						#ko_toggle:checked + #ko_bracket {
+						  display: block;
+						}
+						</style>
+						<sup>2</sup><label for="ko_toggle">Knockout bracket illustration</label>  
+						<input type="checkbox" id="ko_toggle"/>  
+						<span id="ko_bracket">
+							<img src="images/Knockout bracket 24-12-6.png">
+						</span>  
 					</p>
 				</section>
 
 				<section id="results">
 					<h3>Results:</h3>
 					<p>
-						<a href="./results/2016 British Championship knockout results.png">Final results from the 24-pilot knockout</a>.
+						<style>
+						label {
+							color: #f0652f;
+						  cursor: pointer;
+						}
+						#results_toggle {
+						  display: none; /* hide the checkbox */
+						}
+						#ko_results {
+						  display: none;
+						}
+						#results_toggle:checked + #ko_results {
+						  display: block;
+						}
+						</style>
+						<label for="results_toggle">Final positions after the 24-pilot knockout</label>
+						<input type="checkbox" id="results_toggle"/>  
+						<span id="ko_results">
+							<img src="results/2016 British Championship knockout results.png">
+						</span>
 					</p>
 					<p>
 						The following results come straight from the timing software, prior to corrections and amendments.
